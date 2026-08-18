@@ -1,45 +1,48 @@
 <!doctype html>
-<html>
+<html class="dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css" integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style type="text/tailwindcss">
+        @custom-variant dark (&:where(.dark, .dark *));
+    </style>
   </head>
-  <body class="">
+  <body class="dark:bg-[#283044]">
     <nav class="flex flex-row mt-6 items-center">
-        <h1 class="text-blue-700 text-3xl font-bold ml-12 ">EduFocus</h1>
+        <h1 class="text-blue-700 text-3xl font-bold ml-12 dark:text-[#B4C5FF]">EduFocus</h1>
 
         <div class="flex gap-8 ml-[60vw]">
-            <button class="text-blue-700 cursor-pointer">Log In</button>
-            <button class="bg-blue-700 w-25 h-10 text-white rounded-[5px] cursor-pointer">Sign Up</button>
+            <button class="text-blue-700 cursor-pointer dark:text-[#B4C5FF]">Log In</button>
+            <button class="bg-blue-700 w-25 h-10 text-white rounded-[5px] cursor-pointer dark:bg-[#2563EB]">Sign Up</button>
         </div>
 
     </nav>
 
         <!-- hero section -->
 
-        <section class="bg-[#F2F3FF] pt-[10vh] pb-[10vh] mt-[3vh]">
+        <section class="dark:bg-[#D2D9F41A] pb-[60vh] mt-[5vh]">
 
             <!-- left -->
-            <div>
+            <div class=" pt-[10vh] pb-[10vh]">
 
                 <div class="flex flex-row ml-[5vw]">
-                    <img src="./aset/ChatGPT_Image_Jul_29__2026__01_12_25_PM-removebg-preview.png" alt="" class="w-[30px] ">
-                    <p>CURRENT MODULE: COGNITIVE SCIENCE</p>
+                    <img src="./aset/ChatGPT_Image_Jul_29__2026__01_12_25_PM-removebg-preview.png" alt="" class="w-[30px] dark:text-[#B4C5FF] mt-[5vh]">
+                    <p class="dark:text-[#B4C5FF] mt-[5vh]">CURRENT MODULE: COGNITIVE SCIENCE</p>
                 </div>
 
-                <h1 class="mt-[2vh] ml-[5vw] font-bold text-5xl">Mastering the Art of <br><span class="text-blue-700">Calm Focus</span></h1>
+                <h1 class="mt-[2vh] ml-[5vw] font-bold text-5xl dark:text-white">Mastering the Art of <br><span class="text-blue-700 dark:text-[#B4C5FF]">Calm Focus</span></h1>
 
-                <p class="mt-[5vh] ml-[5vw]">
+                <p class="mt-[5vh] ml-[5vw] dark:text-[#C3C6D7]">
                     Explore the psychological foundations of educational environments <br>
                     designed to minimize cognitive load and maximize retention <br>
                     through systematic minimalism.
                 </p>
 
                 <div class="flex flex-row gap-5 ">
-                    <button class="bg-blue-700 text-white w-[15vw] h-[8vh] rounded ml-[5vw] mt-[3vh] cursor-pointer">Start Excercise<i class="fa-solid fa-arrow-right"></i></button>
-                    <button class="border border-blue-700 rounded w-[15vw] h-[8vh] mt-[3vh] cursor-pointer">View Syllabus</button>
+                    <button class="bg-blue-700 text-white w-[15vw] h-[8vh] rounded ml-[5vw] mt-[3vh] cursor-pointer dark:bg-[#2563EB]">Start Excercise<i class="fa-solid fa-arrow-right"></i></button>
+                    <button class="border border-blue-700 rounded w-[15vw] h-[8vh] mt-[3vh] cursor-pointer dark:text-[#B4C5FF] dark:border-[#B4C5FF]">View Syllabus</button>
                 </div>
 
                 <!-- right -->
@@ -48,19 +51,19 @@
 
         </section>
 
-        <section class="pt-[8vh] pb-[8vh] bg-[#FAF8FF] flex flex-row">
+        <section class="pt-[8vh] pb-[8vh] bg-white flex flex-row  dark:bg-[#283044]">
             
             <!-- left -->
             <div>
 
-                <div class="border border-gray-300 bg-white w-[20vw] h-[35vh] ml-[9vw] pt-[3vh] pl-[2vw] rounded">
-                    <p class="mb-[3vh]">KEY CONCEPTS</p>
-                    <p class="text-blue-700"><i class="fa-regular fa-circle-dot text-blue-700"></i>Cognitive Load</p>
+                <div class="border border-gray-300 bg-white w-[20vw] h-[35vh] ml-[9vw] pt-[3vh] pl-[2vw] rounded dark:bg-[#28304466] dark:border-[#7376864D]">
+                    <p class="mb-[3vh] dark:text-[#C3C6D7]">KEY CONCEPTS</p>
+                    <p class="text-blue-700  dark:text-[#B4C5FF]"><i class="fa-regular fa-circle-dot text-blue-700 dark:text-[#B4C5FF]"></i>Cognitive Load</p>
                 </div>
 
-                <div class="border border-blue-200 rounded w-[20vw] h-[40vh] ml-[9vw] pt-[3vh] pl-[2vw] bg-[#DBE1FF] mt-[5vh]">
-                    <p class="text-lg font-bold">Quiz Ready?</p>
-                    <p class="text-blue-700 mt-[3vh]">Test your understanding of <br>visual token in learning <br>interfaces.</p>
+                <div class="border border-blue-200 rounded w-[20vw] h-[40vh] ml-[9vw] pt-[3vh] pl-[2vw] bg-[#DBE1FF] mt-[5vh] dark:bg-[#2563EB33]">
+                    <p class="text-lg font-bold dark:text-[#B4C5FF]">Quiz Ready?</p>
+                    <p class="text-blue-700 mt-[3vh] dark:text-[#C3C6D7]">Test your understanding of <br>visual token in learning <br>interfaces.</p>
                     <button class="bg-blue-700 text-white rounded mt-[3vh] w-[35vh] h-[8vh]">Take Assessment</button>
                 </div>
 
@@ -68,28 +71,51 @@
 
             <!-- right -->
              <div class="ml-[5vw] rtl">
-                <p class="text-gray-800">Published: Oct 24, 2024 - 12 Min Read</p>
-                <h1 class="font-bold text-4xl mt-[3vh] mb-[5vh]">Structural Hierarchy in Digital Pedagogies</h1>
-                <p class="text-gray-700">In the landscape of modern education, the interface acts as the primary mediator <br>
+                <p class="text-gray-800 dark:text-[#C3C6D7]">Published: Oct 24, 2024 - 12 Min Read</p>
+                <h1 class="font-bold text-4xl mt-[3vh] mb-[5vh] dark:text-white">Structural Hierarchy in Digital Pedagogies</h1>
+                <p class="text-gray-700 dark:text-[#C3C6D7]">In the landscape of modern education, the interface acts as the primary mediator <br>
                     between the student and the knowledge. The "Cognitive Ease" framework suggests <br>
                     that when structural elements—such as navigation, headers, and spacing—are <br>
                     standardized, the brain can divert metabolic resources away from decoding the UI <br>
                     and toward deep conceptual processing.</p>
-                <p class="border-s-4 border-s-blue-700 mt-[4vh] pl-[2vw] bg-[#F2F3FF]">"The primary goal of educational design is not to impress with complexity, but to empower <br>
+                <p class="border-s-4 border-s-blue-700 mt-[4vh] pl-[2vw] bg-[#F2F3FF] dark:border-s-[#B4C5FF] dark:bg-[#D2D9F41A] dark:text-white">"The primary goal of educational design is not to impress with complexity, but to empower <br>
                     with clarity."</p>
              </div>
             </section>
             
-        <section>
-            <div class="border pt-[10vh] w-[55vw] ml-[34vw] px-[4vw]">
+        <section class="-mt-[30vh] bg-white dark:bg-[#283044]">
+            <div class="border pt-[10vh] w-[55vw] ml-[34vw] px-[4vw] mb-[10vh] pb-[10vh] rounded dark:border-[#7376864D]">
 
                 <div class="flex flex-row justify-between">
-                   <h2 class="font-semibold text-2xl">Module Practice</h2>
-                   <p class="bg-[#D0E1FB] px-[2vw] rounded-full items-center">5 Question</p>
+                   <h2 class="font-semibold text-2xl dark:text-white">Module Practice</h2>
+                   <p class="bg-[#D0E1FB] px-[2vw] rounded-full items-center text-[#54647A] dark:bg-[#B7C8E133] dark:text-[#D3E4FE]">5 Question</p>
                 </div>
 
-                <p class="text-gray-700">Check your understanding of the spacing rhythm </p>
+                <p class="text-gray-700 dark:text-[#C3C6D7]">Check your understanding of the spacing rhythm </p>
+
+                <div class="border mt-[5vh] px-[3vw] h-[10vh] w-auto flex items-center rounded">
+                    <p class="dark:text-[#C3C6D7]">1.What is primary benefit of the 'Cognitive Ease' framework?</p>
+                </div>
+
+                <div class="border mt-[5vh] px-[3vw] h-[10vh] w-auto flex items-center rounded">
+                    <p class="dark:text-[#C3C6D7]">2.How many pixels should the gutter be on a desktop grid?</p>
+                </div>
+
+                <div class="border-1 border-blue-800 mt-[5vh] px-[3vw] h-[10vh] w-auto flex items-center rounded justify-center dark:text-[#B4C5FF]" >
+                    <p class="text-blue-800 dark:text-[#B4C5FF]">Unlock Full Excercise</p>
+                </div>
            </div>
         </section>
+        <footer class="bg-[#F2F3FF] flex flex-row px-[5vh] py-[2vw] gap-5 dark:bg-[#7376864D]">
+            <p class=" font-bold dark:text-[#EEF0FF]">EduFocus</p>
+            <p class="text-gray-700 dark:text-[#C3C6D7]">|</p>
+            <p class="text-gray-700 dark:text-[#C3C6D7]">©EduFocus.All rights reserved</p>
+
+            <div class="ml-[35vw] flex gap-5">
+                <a href="" class="text-gray-700 underline dark:text-[#C3C6D7]">Privacy Policy</a>
+                <a href="" class="text-gray-700 underline dark:text-[#C3C6D7]">Terms of service</a>
+                <a href="" class="text-gray-700 underline dark:text-[#C3C6D7]">Help Center</a>
+            </div>
+        </footer>
   </body>
 </html>
